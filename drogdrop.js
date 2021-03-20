@@ -6,13 +6,11 @@ const divInfoAboutSize = document.querySelector('.info-text');
 const imgSize = divInfoAboutSize.querySelector('p');
 // const btnSendToServer = formUpload.querySelector('.progress__inner__btn');
 const btnSave = document.querySelector('.drog-space-save');
-
 const btnBrowse =  document.querySelector('.drog-space-download');
 console.log(btnBrowse);
 const input = document.querySelector('#fileElem');
 // const MyForm = document.que
 console.log(input);
-
 let file;
 
 const availableFileTypes = {
@@ -26,10 +24,10 @@ btnBrowse.onclick = ()=>{
 }
 
 input.addEventListener('change', function() {
-    file = this.files[0];
-    toggleDropSpaceClass();
-    showFile();
-    console.log(file.name);
+  file = this.files[0];
+  toggleDropSpaceClass();
+  showFile();
+  console.log(file.name);
 });
 
 function toggleDropSpaceClass(){
@@ -67,14 +65,12 @@ dropSpace.addEventListener('drop', (e) => {
 //     const response = JSON.parse(xhr.responseText);
 //     cb(response);
 //   });
-
 //   xhr.setRequestHeader('Content-Type','form/multipart');
 //   xhr.addEventListener('error', () => {
 //     console.log('error');
 //   });
 //    formData.append('file', file);
-//     xhr.send(formData);
-
+//    xhr.send(formData);
 // }
 
 // btnSave.addEventListener('click', e => {
@@ -82,9 +78,9 @@ dropSpace.addEventListener('drop', (e) => {
 //     body: formData,
 //   };
 //   sentServer(newPost, response => {
-//    console.log(response);
+//     console.log(response);
 //   });
-// });
+//});
 function showFile(){
   let fileType = file.type;
   let fileName = file.name;
@@ -103,13 +99,6 @@ function showFile(){
 // function handleFiles(files) {
 //   ([...files]).forEach(uploadFile);
 // }
-
-
-// function uploadFile(file) {
-  
-// }
-
-
 // function sentServer(body, cb){
 //   let url = 'http://localhost:2121/upload';
 //   let  xhr = new XMLHttpRequest();
@@ -119,7 +108,6 @@ function showFile(){
 //     const response = JSON.parse(xhr.responseText);
 //     cb(response);
 //   });
-
 //   xhr.setRequestHeader('Content-Type','multipart/form-data');
 //   xhr.addEventListener('error', () => {
 //     console.log('error');
@@ -152,11 +140,10 @@ function uploadFile(e){
    xhr.send(formData);
 };
 // btnSave.addEventListener('click', e => {
-
 //     const newPost = {
 //       body: formData,
 //     };
 //     sentServer(newPost, response => {
-//      console.log(response);
+//       console.log(response);
 //     });
 //   });
