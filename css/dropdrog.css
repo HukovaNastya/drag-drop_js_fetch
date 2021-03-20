@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+   
+}
+body{
+    background-color: #2b66cc;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 1200px;
+    font-family: 'Lato', sans-serif; 
+    flex-direction: column; 
+}
+.btn{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    /* background-color: #fff; */
+}
+a{
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    max-width: 544px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    width: 644px;
+    height: 111px;
+    background-color: #037af7;
+    border-radius: 30px 30px 0px 0px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 116px;
+}
+.header__logo a{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.header__btn{
+    background-color: #037af7;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+.header__btn span{
+  color: #7aaedf;
+  font-size: 30px;
+  font-weight: 300;
+}
+.progress{
+    width: 644px;
+    height: 600px;
+    background-color: #fff; 
+    border-radius: 0px 0px 30px 30px;
+}
+.progress__inner-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 99px;
+}
+.progress__inner-info .info-title{
+    color: #464859;
+    font-weight: 400;
+    line-height: 63px;
+}
+.progress__inner-info .info-text{
+    color: #abacb2;
+    font-weight: 400;
+    line-height: 63px;
+}
+.progress__inner-loaded{
+    visibility: hidden;
+}
+.progress__inner-loaded progress{
+    width: 545px;
+    height: 16px;
+}
+.progress__inner-status p{
+    margin-top: -20px;
+    color: #55c4fb;
+    font-weight: 400;
+    line-height: 63px;
+    visibility: hidden;
+}
+.drog-space{
+    background-color: #fff;
+    border: 4px dashed #d4d5de;
+    height: 252px;
+    width: 544px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.progress__inner__btn-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/* s */
+.drog-space.active{
+    background-color: #7aaedf;
+    border: 4px solid #037af7;
+}
+.drog-space .drog-space-img img{
+    margin-top: 56px;
+
+}
+.drog-space  .drog-space-text{
+    color: #777a90;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px  0px 15px 0; 
+}
+
+.drog-space  .drog-space-text span .drog-space-download{   
+  color: #0093f7;  
+  outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
+}
+.progress__inner__btn .drog-space-save{
+    margin-top: 43px;
+    width: 262px;
+    height: 64px;
+    margin-left: 133px;
+    border-radius: 10px;
+    background-color: #00a6f9;
+    box-shadow: 0px 8px 35px 0px rgba(0, 166, 249, 0.3);
+    /* font-weight: bold; */
+
+} 
+/* .drog-space  .drog-space-save{
+    background-color: #fff;
+}  */
+#fileElem {
+    outline:none;
+    /* color: #0093f7; */
+    /* background-color: #fff; */
+    border: none;
+    /* display: none; */
+  }
+
+
+

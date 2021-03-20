@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize копія.css">
+    <link rel="stylesheet" href="css/dropdrog.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#">UPLOAD FILES</a>
+
+                </div>
+                <button class="header__btn">
+                    <span>x</span>
+                  </button>
+            </div>
+        </div>
+    </header>
+    <section class="progress">
+        <div class="container">
+            <div class="progress__inner">
+                <div class="progress__inner-info">
+                    <div class="info-title">
+                        <p></p>
+                    </div>
+                    <div class="info-text">
+                        <p>  </p>
+                    </div>
+                </div>
+                <div class="progress__inner-loaded">
+                    <progress max="100" value="60"></progress>
+                </div>
+                <div class="progress__inner-status">
+                    <p>Pause</p>
+                </div> 
+                <div class="drog-space">
+                    <form class="progress__inner__btn-form">
+                    <div class="drog-space-img">
+                        <img src="img/cloud-computing.png" alt="#">
+                    </div>
+                    <div class="drog-space-text">
+                        <p class="drog-space-text">Drag files here or <span> <input  type="file" id="fileElem" hidden><button class="btn drog-space-download">browse</button> </span></p>
+                    </div>
+                </div>  
+               <div class="progress__inner__btn">
+              
+                   <!-- <button class="btn  drog-space-save" type="submit">SAVE</button> -->
+                   <input type="submit" class="btn  drog-space-save" value="SAVE">
+               
+               </div> 
+            </form> 
+            </div>
+        </div>
+    </section>
+    <script src="drogdrop.js"></script>
+</body>
+</html>
