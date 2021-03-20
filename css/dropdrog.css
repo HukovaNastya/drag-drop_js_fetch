@@ -56,9 +56,9 @@ a{
     cursor: pointer;
 }
 .header__btn span{
-  color: #7aaedf;
-  font-size: 30px;
-  font-weight: 300;
+    color: #7aaedf;
+    font-size: 30px;
+    font-weight: 300;
 }
 .progress{
     width: 644px;
@@ -136,7 +136,7 @@ a{
   background: transparent;
 }
 .progress__inner__btn .drog-space-save{
-    margin-top: 43px;
+  margin-top: 43px;
     width: 262px;
     height: 64px;
     margin-left: 133px;
