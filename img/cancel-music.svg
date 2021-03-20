@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.43;
+      }
+    </style>
+  </defs>
+  <image id="cancel-music" class="cls-1" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA80lEQVRIibWWPQ7CMAyFnyskOAkL4gYMVNwFTonaITdAvQtMRkYZosZ14pa8pVVivy//CTHzEcAVAAEIRDRhg5j5BOAivwBGAdwBHBLLgYheaxDMfAbQJ0XvLrY8VR8Dt5qLSAAhi3ZCFsxFoYtjPmRVlRDDXIZ6ospAdU5qcsib4I2dT3BVoqchGaBkEL9qnTaUKqAA0aSamwAHZNG8CKiAmOaiLiv5s8weFFpf1YtFQNNJNszdy3TnMU82mgaRswvmRmt6VDQ97NaY10Io3qG3rNpxdRqQpwAeAPZrzQuQj+zk35LYYi6KOfObkds+W4DxC6NcvArdIbP5AAAAAElFTkSuQmCC"/>
+</svg>
