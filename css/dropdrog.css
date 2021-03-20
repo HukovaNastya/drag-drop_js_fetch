@@ -33,7 +33,7 @@ a{
     padding: 0 15px;
 }
 .header{
-    width: 644px;
+    min-width: 644px;
     height: 111px;
     background-color: #037af7;
     border-radius: 30px 30px 0px 0px;
@@ -61,7 +61,7 @@ a{
     font-weight: 300;
 }
 .progress{
-    width: 644px;
+    min-width: 644px;
     height: 600px;
     background-color: #fff; 
     border-radius: 0px 0px 30px 30px;
@@ -86,7 +86,7 @@ a{
     visibility: hidden;
 }
 .progress__inner-loaded progress{
-    width: 545px;
+    width: 100%;
     height: 16px;
 }
 .progress__inner-status p{
@@ -100,7 +100,7 @@ a{
     background-color: #fff;
     border: 4px dashed #d4d5de;
     height: 252px;
-    width: 544px;
+    min-width: 544px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -113,14 +113,13 @@ a{
     justify-content: space-between;
     flex-direction: column;
 }
-/* s */
+
 .drog-space.active{
     background-color: #7aaedf;
     border: 4px solid #037af7;
 }
 .drog-space .drog-space-img img{
     margin-top: 56px;
-
 }
 .drog-space  .drog-space-text{
     color: #777a90;
@@ -130,13 +129,13 @@ a{
 }
 
 .drog-space  .drog-space-text span .drog-space-download{   
-  color: #0093f7;  
-  outline: none; /* Для синий ободки */
-  border: 0;
-  background: transparent;
+    color: #0093f7;  
+    outline: none;
+    border: 0;
+    background: transparent;
 }
 .progress__inner__btn .drog-space-save{
-  margin-top: 43px;
+    margin-top: 43px;
     width: 262px;
     height: 64px;
     margin-left: 133px;
@@ -144,7 +143,6 @@ a{
     background-color: #00a6f9;
     box-shadow: 0px 8px 35px 0px rgba(0, 166, 249, 0.3);
     /* font-weight: bold; */
-
 } 
 /* .drog-space  .drog-space-save{
     background-color: #fff;
