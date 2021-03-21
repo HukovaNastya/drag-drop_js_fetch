@@ -85,6 +85,9 @@ a{
 .progress__inner-loaded{
     visibility: hidden;
 }
+.progress__inner-loaded.active{
+    visibility: visible;
+}
 .progress__inner-loaded progress{
     width: 100%;
     height: 16px;
@@ -128,17 +131,17 @@ a{
     margin: 10px  0px 15px 0; 
 }
 
-.drog-space  .drog-space-text span .drog-space-download{   
+.drog-space  .drog-space-text  span {   
     color: #0093f7;  
-    outline: none;
+    /* outline: none;
     border: 0;
-    background: transparent;
+    background: transparent; */
 }
 .progress__inner__btn .drog-space-save{
-    margin-top: 43px;
+    margin-top: 80px;
     width: 262px;
     height: 64px;
-    margin-left: 133px;
+    /* margin-left: 133px; */
     border-radius: 10px;
     background-color: #00a6f9;
     box-shadow: 0px 8px 35px 0px rgba(0, 166, 249, 0.3);
