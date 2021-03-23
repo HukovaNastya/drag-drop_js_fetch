@@ -131,13 +131,15 @@ a{
     margin: 10px  0px 15px 0; 
 }
 
-.drog-space  .drog-space-text  span {   
+.drog-space  .drog-space-text  span { 
+    cursor: pointer;  
     color: #0093f7;  
     /* outline: none;
     border: 0;
     background: transparent; */
 }
-.progress__inner__btn .drog-space-save{
+.progress__inner__btn .drog-space-save,
+.drog-space-show{
     margin-top: 80px;
     width: 262px;
     height: 64px;
@@ -157,6 +159,16 @@ a{
     border: none;
     /* display: none; */
   }
-
+.inner__server__response__img.active{
+    max-width: 544px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 100px;
+    background-color: #fff;
+    border: 4px dashed #d4d5de;
+    height: 252px;
+    min-width: 544px;
+    border-radius: 5px;
+}
 
 
