@@ -95,11 +95,11 @@ function sendImg(){
     body: formData,
   })
   .then(e => { progressBar.value = 0;
-      const loaded = e.loaded;
-      const total = e.total;
-      const percent = (loaded / total) * 100;
-      progressBar.setAttribute('style', `width: ${percent.toFixed(2)}%` );
-      progressBar.value = Math.floor(percent); })
+     const loaded = e.loaded;
+     const total = e.total;
+     const percent = (loaded / total) * 100;
+     progressBar.setAttribute('style', `width: ${percent.toFixed(2)}%` );
+     progressBar.value = Math.floor(percent); })
   .catch((err) => { console.log('error');})
 }
 
