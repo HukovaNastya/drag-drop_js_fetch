@@ -82,42 +82,33 @@ function uploadFileToServer(e){
 
  const btnShowFile = document.querySelector('.drag-space-show');
  btnShowFile.addEventListener('click', e => {
-   serverResponse(renderFile);
+  //  serverResponse(renderFile);
+  serverResponse(file).then(renderFile).catch(err => alert('Ooops, error!'));
 })
 
 function sendImg(){
   const url = 'http://localhost:2121/upload';
-  const xhr = new XMLHttpRequest();
   const formData = new FormData();
-  xhr.open('POST', url, true);
-  xhr.addEventListener('load', () => {
-  });
-  xhr.upload.addEventListener("progress", function(e) {
-    progressBar.value = 0;
-    const loaded = e.loaded;
-    const total = e.total;
-    const percent = (loaded / total) * 100;
-    progressBar.setAttribute('style', `width: ${percent.toFixed(2)}%` );
-    progressBar.value = Math.floor(percent);
- });
-  xhr.addEventListener('error', () => {
-    console.log('error');
-  });
-  formData.append('files', file);
-  xhr.send(formData);
+  formData.append('files', file)
+  fetch(url, {
+    method: 'POST',
+    body: formData,
+  })
+  .then(e => { progressBar.value = 0;
+        const loaded = e.loaded;
+        const total = e.total;
+        const percent = (loaded / total) * 100;
+        progressBar.setAttribute('style', `width: ${percent.toFixed(2)}%` );
+        progressBar.value = Math.floor(percent); })
+  .catch((err) => { console.log('error');})
 }
 
 function serverResponse(cb){
-  const xhr =  new XMLHttpRequest();
-  xhr.open('GET','http://localhost:2121/files');
-  xhr.addEventListener('load', () => {
-    const response = JSON.parse(xhr.responseText);
-    cb(response);
-  });
-  xhr.addEventListener('error', () => {
-    console.log('error');
-  });
-  xhr.send();
+  return Promise.resolve().then(() => {
+    return fetch('http://localhost:2121/files')
+    .then(response => response.json())
+    .catch((err) => { console.log('error');});
+   })
 };
 
 const container = document.querySelector('.container__img');
